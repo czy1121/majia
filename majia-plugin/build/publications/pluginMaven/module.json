@@ -1,0 +1,157 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "me.reezy.gradle",
+    "module": "majia-plugin",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "majia-plugin-1.0.0.jar",
+          "url": "majia-plugin-1.0.0.jar",
+          "size": 83993,
+          "sha512": "cafef42b0ee02d3d9f4a1c06ed0d3021d9bbb6012e3606d138f84ab7210066e77f188aec0ef6828098bb7af5fad13dec4f0d41d461947bed1d8c07aa62c61a0f",
+          "sha256": "85b34dd77d53f70e46830f210f67b56f7395301994e0ed3ca82cc6c1f9873f9b",
+          "sha1": "1d2bd64a36a93efa7ae436a3b5152483ccea85f2",
+          "md5": "f32dbd3a919ed01da3155934805072ba"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.4.2"
+          }
+        },
+        {
+          "group": "com.didiglobal.booster",
+          "module": "booster-aapt2",
+          "version": {
+            "requires": "4.16.3"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.5"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "30.1.1-jre"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-compress",
+          "version": {
+            "requires": "1.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "majia-plugin-1.0.0.jar",
+          "url": "majia-plugin-1.0.0.jar",
+          "size": 83993,
+          "sha512": "cafef42b0ee02d3d9f4a1c06ed0d3021d9bbb6012e3606d138f84ab7210066e77f188aec0ef6828098bb7af5fad13dec4f0d41d461947bed1d8c07aa62c61a0f",
+          "sha256": "85b34dd77d53f70e46830f210f67b56f7395301994e0ed3ca82cc6c1f9873f9b",
+          "sha1": "1d2bd64a36a93efa7ae436a3b5152483ccea85f2",
+          "md5": "f32dbd3a919ed01da3155934805072ba"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "majia-plugin-1.0.0-javadoc.jar",
+          "url": "majia-plugin-1.0.0-javadoc.jar",
+          "size": 261,
+          "sha512": "ef434239897a5a40467b1ff817f285545e0e5e0f8f45dd00ebe821f8b8d85139ab084cb2c69909e94b86fa97b6164a4d7be9c8a4d58fe2e88ffa9da6eb630f26",
+          "sha256": "ce9e958110e5a0013c90b809ab98a142afbb4b3a919e5f3d5377b10bea9b7362",
+          "sha1": "badf9fe9b766c304ced4698ed23a334014f68281",
+          "md5": "5beb0ce6e9953496bab069daa14c4300"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "majia-plugin-1.0.0-sources.jar",
+          "url": "majia-plugin-1.0.0-sources.jar",
+          "size": 16640,
+          "sha512": "2bf99799e8597f82f83ca499203c2fdafa6ac0b1b4394c1acd3b3099b30825adf685fcc5c87b547e8eeb6f7411cd90f031a42cae873b63d50055a8036126e921",
+          "sha256": "1761fd11359fb3062831f10283506a93a9e47673a422ce0b08e0d1076184c610",
+          "sha1": "8a9042d9232506953de597572e4dc8b44e6fdf38",
+          "md5": "d0ecb80fc4477e5c97dcfeeb009caa57"
+        }
+      ]
+    }
+  ]
+}

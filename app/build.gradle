@@ -1,0 +1,19 @@
+
+
+apply from: "$buildGradlePath/build-demo.gradle"
+
+
+apply plugin: "me.reezy.gradle.majia"
+
+
+majia {
+    scopes = ["com.sample.framework", "me.reezy.cosmo", "com.demo.app", "androidx.databinding.DataBinderMapperImpl"]
+
+    mappings = [
+        "me.reezy.cosmo": "hello.world",
+        "com.sample.framework": "hello.goodbye",
+        "com.demo.app": "hello.hasayo",
+    ]
+
+    variant = "debug"
+}
