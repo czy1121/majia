@@ -95,7 +95,6 @@ internal abstract class MajiaXmlTask : DefaultTask() {
 
 
     private fun transform(entryName: String, data: ByteArray, mapping: Map<String, String>): ByteArray {
-        if (!entryName.contains("main")) return data
         try {
             val xml = BinaryXml(data)
 
@@ -106,14 +105,12 @@ internal abstract class MajiaXmlTask : DefaultTask() {
             val old = Base64.getEncoder().encodeToString(data.sha256())
             val new = Base64.getEncoder().encodeToString(result.sha256())
 
-//            if (old != new) {
-//            println("=====>>> [$old, $new] => $entryName"), strings =
-//${xml.stringPool?.stringList?.joinToString("\n")}
-                println("=====>>> [$old, $new] => $entryName \nold = ${data.hex()} \nnew = ${result.hex()} \n${xml.toXmlString()}")
-//            }
+            if (old != new) {
+                println("=====>>> [$old, $new] => $entryName")
+//                println("=====>>> [$old, $new] => $entryName \nold = ${data.hex()} \nnew = ${result.hex()} \n${xml.toXmlString()}")
+            }
             return result
         } catch (ex: Throwable) {
-            println("======>>>>>> $ex")
             ex.printStackTrace()
         }
         return data
